@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+body {
+    background-color: khaki;
+    /* background-image: */
+    display: grid;
+    
+}
+
+h1 {
+
+    color: balck;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    .enlaces {
+        
+        align-items: center;
+        background-color:rgb(11, 77, 77);
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-areas: 
+        " none contactos productos nosotros ubicacion";
+    }
+  .navbar-brand:hover {
+    color: blue;
+    transform: scale(1.5,1.5);
+    transition: all 0.7s;
+  }
+    
+    .banner {
+        background-color:yellow;
+        width: 100%;
+        height: 350px;
+    }
+    .imageBanner {
+        width: 100%;
+        height: 350px;
+    }
+    /* .titulo {
+        background-color: blanchedalmond;
+    } */
+    
+    a {
+        display: block;
+        color: aliceblue;
+        text-decoration:dashed;
+        font-size: 30px;
+    }
+    
+
+.listaMenu {
+display: inline;
+
+
+
+}
+h2 {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+    
+.producto {
+    margin: 10px ;
+}
+
+.cSob {
+
+    width: 20rem;
+    height: 20rem;
+}
+
+footer {
+    background-color: aqua;
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) and (min-width: 400px) {
+
+.enlaces {
+    display: none;
+}
+
+}
+    /* PAGINA PRODUCTOS */
+
+    .mainP {
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        }
+    .bodyProductos {
+        display: grid;
+        grid-template-areas: 
+        "headerFP headerFP headerFP"
+        "mainP mainP mainP"
+        "footerP footerP footerP";
+    }
+    .headerFP {
+        grid-area: headerFP;
+    }
+
+    .mainP {
+        grid-area: mainP;
+    }
+
+    #footerP {
+        grid-area: footerP;
+    }
