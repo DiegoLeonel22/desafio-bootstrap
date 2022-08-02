@@ -91,9 +91,9 @@ footer {
 
 /* responsive */
 
-@media (max-width: 900px) and (min-width: 400px) {
+@media (max-width: 900px) and (min-width: 200px) {
 
-.enlaces {
+a {
     display: none;
 }
 
@@ -123,4 +123,9 @@ footer {
 
     #footerP {
         grid-area: footerP;
+    }
+
+    .logoFooter {
+        width: 140px;
+        
     }
