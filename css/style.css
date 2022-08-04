@@ -86,7 +86,12 @@ a {
 
 footer {
     background-color: aqua;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 
 
 /* responsive */
@@ -111,7 +116,7 @@ a {
         grid-template-areas: 
         "headerFP headerFP headerFP"
         "mainP mainP mainP"
-        "footerP footerP footerP";
+        "footerP footerP footerP ";
     }
     .headerFP {
         grid-area: headerFP;
